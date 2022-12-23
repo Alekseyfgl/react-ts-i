@@ -13,14 +13,17 @@ function App() {
             <Rating value={1}/>
 
             <Accordion title={'Accordion title'}/>
+            <Accordion title={'Accordion body'}/>
             Article 1
             <Rating value={0}/>
         </div>
     );
 }
 
-//fragment
-function AppTitle(props: any) {
+type AppTitlePropsType = {
+    title: string
+}
+function AppTitle(props: AppTitlePropsType) {
     return <>{props.title}</>
 }
 
