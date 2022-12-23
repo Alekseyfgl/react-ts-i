@@ -5,10 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0aeb963f-3c1e-4b40-922e-f351ae791e4a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/acccordion/Accordion.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/rating/Rating.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/rating/Rating.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/rating/Rating.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -20,6 +21,10 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="com.haulmont.rcb.function_component" />
+        <option value="com.haulmont.rcb.palette" />
+        <option value="com.haulmont.rcb.previews" />
+        <option value="com.haulmont.rcb.index" />
+        <option value="com.haulmont.rcb.useInitial" />
       </list>
     </option>
   </component>
@@ -39,7 +44,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/home/aleksey/work/app",
+    "last_opened_file_path": "/home/aleksey/Public/incubator/my-app",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
     "node.js.detected.package.tslint": "true",
@@ -91,7 +96,10 @@
       <option name="presentableId" value="Default" />
       <updated>1671621612918</updated>
       <workItem from="1671621614041" duration="3619000" />
-      <workItem from="1671627328582" duration="2882000" />
+      <workItem from="1671627328582" duration="3061000" />
+      <workItem from="1671780628435" duration="2700000" />
+      <workItem from="1671791523742" duration="108000" />
+      <workItem from="1671796657661" duration="2651000" />
     </task>
     <servers />
   </component>

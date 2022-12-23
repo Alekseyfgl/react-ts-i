@@ -6,9 +6,14 @@ import {Rating} from "./components/rating/Rating";
 function App() {
     return (
         <div>
+            <input/>
+            <input/>
+              Article 1
+            <Rating value={3}/>
             <AppTitle/>
             <Accordion/>
-            <Rating/>
+            Article 1
+            <Rating value={4}/>
         </div>
     );
 }
