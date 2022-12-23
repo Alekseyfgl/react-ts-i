@@ -21,15 +21,23 @@ export function Rating(props: any) {
 
             <div>
                 <Star selected={true}/>
+                <Star selected={false}/>
                 <Star selected={true}/>
-                <Star selected={true}/>
-                <Star selected={true}/>
+                <Star selected={false}/>
                 <Star selected={true}/>
             </div>
         )
-    } else {
-        return null
     }
+
+    return (
+        <div>
+            <Star selected={true}/>
+            <Star selected={true}/>
+            <Star selected={true}/>
+            <Star selected={true}/>
+            <Star selected={true}/>
+        </div>
+    )
 
 
 }

@@ -6,21 +6,22 @@ import {Rating} from "./components/rating/Rating";
 function App() {
     return (
         <div>
+            <AppTitle title={'This is APP component'}/>
             <input/>
             <input/>
-              Article 1
-            <Rating value={3}/>
-            <AppTitle/>
-            <Accordion/>
             Article 1
-            <Rating value={4}/>
+            <Rating value={1}/>
+
+            <Accordion title={'Accordion title'}/>
+            Article 1
+            <Rating value={0}/>
         </div>
     );
 }
 
 //fragment
-function AppTitle() {
-    return <>Some Title</>
+function AppTitle(props: any) {
+    return <>{props.title}</>
 }
 
 export default App;
