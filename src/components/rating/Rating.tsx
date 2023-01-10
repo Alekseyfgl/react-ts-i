@@ -1,24 +1,22 @@
-import React from "react";
+import React from 'react';
 
 type RatingPropsType = {
     value: number
 }
 
 export function Rating(props: RatingPropsType) {
-    console.log('Rating')
 
-    if (props.value === 0) {
-        return (
+    return (
 
-            <div>
-                <Star selected={false}/>
-                <Star selected={false}/>
-                <Star selected={false}/>
-                <Star selected={false}/>
-                <Star selected={false}/>
-            </div>
-        )
-    }
+        <div>
+            <Star selected={props.value >= 1}/>
+            <Star selected={props.value >= 2}/>
+            <Star selected={props.value >= 3}/>
+            <Star selected={props.value >= 4}/>
+            <Star selected={props.value >= 5}/>
+        </div>
+    )
+
 
     if (props.value === 1) {
         return (
@@ -51,7 +49,6 @@ type StartPropsType = {
 }
 
 function Star(props: StartPropsType) {
-    console.log(props)
     if (props.selected) {
         return <span><b>start</b> </span>
     } else {
