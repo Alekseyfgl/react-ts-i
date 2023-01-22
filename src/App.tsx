@@ -19,6 +19,9 @@ function App() {
             <hr/>
 
             <UncontrollRating/>
+            <br/>
+            <UncontrollRating/>
+
 
             <br/>
             <hr/>
