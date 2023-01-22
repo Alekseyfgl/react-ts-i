@@ -1,21 +1,30 @@
-type OnOffPropsType = {
-    status: boolean
-}
+import {useState} from 'react';
 
-export const OnOff = (props: OnOffPropsType) => {
-    const {status} = props
 
+export const OnOff = () => {
+
+    const [onOff, setOnOff] = useState<boolean>(true);
+
+    const onClickOnfHandler = () => {
+        setOnOff(true)
+    }
+    const onClickOffHandler = () => {
+        setOnOff(false)
+    }
+    const indicatorStyle = {
+        borderRadius: '50%',
+        height: '20px',
+        width: '20px',
+        backgroundColor: onOff ? 'green' : 'red',
+    }
+    const onStyle = {backgroundColor: onOff ? 'green' : 'white', marginRight: '10px'}
+    const offStyle = {backgroundColor: onOff ? 'white' : 'red'}
     return (
         <div>
 
-            <div style={{backgroundColor: status ? 'green' : 'white'}}>on</div>
-            <div style={{backgroundColor: status ? 'white' : 'red'}}>off</div>
-            <div style={{
-                borderRadius: '50%',
-                height: '20px',
-                width: '20px',
-                backgroundColor: status ? 'green' : 'red'
-            }}></div>
+            <button onClick={onClickOnfHandler} style={onStyle}>on</button>
+            <button onClick={onClickOffHandler} style={offStyle}>off</button>
+            <div style={indicatorStyle}></div>
         </div>
     );
 }
