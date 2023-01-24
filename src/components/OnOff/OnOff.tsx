@@ -2,24 +2,25 @@ import {FC, useState} from "react";
 
 type OnOffPopsType = {
     on: boolean
+    setOn: (on: boolean) => void
 }
 export const OnOff: FC<OnOffPopsType> = (props) => {
-    const [onOff, setOnOff] = useState<boolean>(props.on);
+
 
     const onClickOnfHandler = () => {
-        setOnOff(true)
+        props.setOn(true)
     }
     const onClickOffHandler = () => {
-        setOnOff(false)
+        props.setOn(false)
     }
     const indicatorStyle = {
         borderRadius: '50%',
         height: '20px',
         width: '20px',
-        backgroundColor: onOff ? 'green' : 'red',
+        backgroundColor: props.on ? 'green' : 'red',
     }
-    const onStyle = {backgroundColor: onOff ? 'green' : 'white', marginRight: '10px'}
-    const offStyle = {backgroundColor: onOff ? 'white' : 'red'}
+    const onStyle = {backgroundColor: props.on ? 'green' : 'white', marginRight: '10px'}
+    const offStyle = {backgroundColor: props.on ? 'white' : 'red'}
     return (
         <div>
 

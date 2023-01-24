@@ -4,14 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0aeb963f-3c1e-4b40-922e-f351ae791e4a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/UncontrollOnOff/UncontrollOnOff.tsx" afterDir="false" />
+    <list default="true" id="0aeb963f-3c1e-4b40-922e-f351ae791e4a" name="Changes" comment="add callbacks">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/OnOff/OnOff.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/OnOff/OnOff.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UncontrollRating/UncontrollRating.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UncontrollRating/UncontrollRating.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/acccordion/Accordion.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/acccordion/Accordion.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/rating/Rating.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/rating/Rating.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +43,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/webstorm/incubator/react-ts-i",
+    "last_opened_file_path": "/home/aleksey/work/app",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
     "node.js.detected.package.tslint": "true",
@@ -116,8 +113,16 @@
       <workItem from="1671813248149" duration="3113000" />
       <workItem from="1671986840983" duration="380000" />
       <workItem from="1673374880402" duration="2196000" />
-      <workItem from="1674546322357" duration="4577000" />
+      <workItem from="1674546322357" duration="6903000" />
     </task>
+    <task id="LOCAL-00001" summary="add callbacks">
+      <created>1674550992761</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1674550992761</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -133,5 +138,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add callbacks" />
+    <option name="LAST_COMMIT_MESSAGE" value="add callbacks" />
   </component>
 </project>
