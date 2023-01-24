@@ -5,19 +5,15 @@ export function UncontrollRating() {
 
     const [start, setStart] = useState<number>(0);
 
-    const onClickStartHandler = (value: number) => {
-        console.log('onClickStartHandler')
-        setStart(value)
-    }
 
     return (
 
         <div>
-            <Starr num={1} selected={start >= 1} onClickStartHandler={onClickStartHandler}/>
-            <Starr num={2} selected={start >= 2} onClickStartHandler={onClickStartHandler}/>
-            <Starr num={3} selected={start >= 3} onClickStartHandler={onClickStartHandler}/>
-            <Starr num={4} selected={start >= 4} onClickStartHandler={onClickStartHandler}/>
-            <Starr num={5} selected={start >= 5} onClickStartHandler={onClickStartHandler}/>
+            <Starr value={1} selected={start >= 1} setStart={() => setStart(1)}/>
+            <Starr value={2} selected={start >= 2} setStart={() => setStart(2)}/>
+            <Starr value={3} selected={start >= 3} setStart={() => setStart(3)}/>
+            <Starr value={4} selected={start >= 4} setStart={() => setStart(4)}/>
+            <Starr value={5} selected={start >= 5} setStart={() => setStart(5)}/>
         </div>
     )
 
@@ -25,14 +21,12 @@ export function UncontrollRating() {
 }
 
 type StartPropsType = {
-    num: number
+    value: number
     selected: boolean
-    onClickStartHandler: (value: number) => void
+    setStart: (value: number) => void
 }
 
 
 function Starr(props: StartPropsType) {
-    return props.selected ? <span onClick={() => props.onClickStartHandler(props.num)}><b> start </b> </span> :
-        <span onClick={() => props.onClickStartHandler(props.num
-        )}> start </span>
+    return <span onClick={() => props.setStart(props.value)}> {props.selected ? <b>star</b> : 'start'} </span>
 }

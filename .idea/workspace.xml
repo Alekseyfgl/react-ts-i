@@ -4,9 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0aeb963f-3c1e-4b40-922e-f351ae791e4a" name="Changes" comment="add state for rating">
+    <list default="true" id="0aeb963f-3c1e-4b40-922e-f351ae791e4a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/UncontrollOnOff/UncontrollOnOff.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/OnOff/OnOff.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/OnOff/OnOff.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UncontrollRating/UncontrollRating.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UncontrollRating/UncontrollRating.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/acccordion/Accordion.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/acccordion/Accordion.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/rating/Rating.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/rating/Rating.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,23 +41,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/webstorm/incubator/react-ts-i&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;D:\\webstorm\\incubator\\react-ts-i\\node_modules\\typescript\\lib&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/webstorm/incubator/react-ts-i",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "ts.external.directory.path": "/home/aleksey/Public/incubator/my-app/node_modules/typescript/lib"
   }
-}</component>
+}]]></component>
   <component name="ReactDesignerToolWindowState">
     <option name="myId2Visible">
       <map>
@@ -110,18 +115,9 @@
       <workItem from="1671796657661" duration="3390000" />
       <workItem from="1671813248149" duration="3113000" />
       <workItem from="1671986840983" duration="380000" />
-      <workItem from="1673374880402" duration="2540000" />
-      <workItem from="1674377407485" duration="7950000" />
-      <workItem from="1674387156900" duration="39000" />
+      <workItem from="1673374880402" duration="2196000" />
+      <workItem from="1674546322357" duration="4577000" />
     </task>
-    <task id="LOCAL-00001" summary="add state for rating">
-      <created>1674386950220</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1674386950220</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -137,9 +133,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="add state for rating" />
-    <option name="LAST_COMMIT_MESSAGE" value="add state for rating" />
   </component>
 </project>

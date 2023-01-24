@@ -1,11 +1,11 @@
-import {FC, useState} from "react";
+import {useState} from 'react';
 
-type OnOffPopsType = {
-    on: boolean
-}
-export const OnOff: FC<OnOffPopsType> = (props) => {
-    const [onOff, setOnOff] = useState<boolean>(props.on);
 
+export const UncontrollOnOff = () => {
+
+    const [onOff, setOnOff] = useState<boolean>(true);
+
+    console.log(onOff)
     const onClickOnfHandler = () => {
         setOnOff(true)
     }

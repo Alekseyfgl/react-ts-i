@@ -1,20 +1,24 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './App.css';
 import {Accordion} from './components/acccordion/Accordion';
 import {Rating} from './components/rating/Rating';
-import {OnOff} from './components/OnOff/OnOff';
+import {UncontrollOnOff} from './components/UncontrollOnOff/UncontrollOnOff';
 import {UncontrollRating} from './components/UncontrollRating/UncontrollRating';
+import {OnOff} from "./components/OnOff/OnOff";
 
 function App() {
+
+    const [ratingValue, setRatingValue] = useState<number>(0);
+    const [accordionCollapsed, setAccordionCollapsed] = useState<boolean>(false);
     return (
         <div>
 
-            <Accordion title={'Accordion 1'} collapsed={false}/>
+            <Accordion title={'Accordion 1'} collapsed={accordionCollapsed} setAccordionCollapsed={setAccordionCollapsed}/>
             <Accordion title={'Accordion 2'} collapsed={true}/>
             <br/>
             <hr/>
 
-            <Rating value={3}/>
+            <Rating value={ratingValue} onClick={setRatingValue}/>
             <br/>
             <hr/>
 
@@ -25,8 +29,13 @@ function App() {
 
             <br/>
             <hr/>
-            <OnOff/>
-            <OnOff/>
+            <UncontrollOnOff/>
+            <UncontrollOnOff/>
+
+            <br/>
+            <hr/>
+
+            <OnOff on={true}/>
         </div>
     );
 }
