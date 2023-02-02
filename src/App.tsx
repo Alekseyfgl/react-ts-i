@@ -1,53 +1,47 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import './App.css';
-import {Accordion} from './components/acccordion/Accordion';
-import {Rating} from './components/rating/Rating';
-import {UncontrollOnOff} from './components/UncontrollOnOff/UncontrollOnOff';
-import {UncontrollRating} from './components/UncontrollRating/UncontrollRating';
-import {OnOff} from "./components/OnOff/OnOff";
+
 
 function App() {
 
-    const [ratingValue, setRatingValue] = useState<number>(0);
-    const [accordionCollapsed, setAccordionCollapsed] = useState<boolean>(false);
-    const [on, setOn] = useState(false);
+    const [value, setValue] = useState(0);
+
+    useEffect(() => {
+        getLocalStorageHandler()
+    }, []);
+
+
+    useEffect(() => {
+        setLocalStorageHandler()
+    }, [value]);
+
+
+
+
+    const onclickIncHandler = () => {
+        setValue(value + 1);
+    }
+    const setLocalStorageHandler = () => {
+        localStorage.setItem('counter', JSON.stringify(value))
+    }
+    const getLocalStorageHandler = () => {
+        const valueJSON: string | null = localStorage.getItem('counter');
+        if (valueJSON) {
+            const value = JSON.parse(localStorage.getItem('counter')!)
+            setValue(value)
+        }
+
+    }
+
     return (
         <div>
-
-            <Accordion title={'Accordion 1'} collapsed={accordionCollapsed}
-                       setAccordionCollapsed={() => setAccordionCollapsed(!accordionCollapsed)}/>
-            {/*<Accordion title={'Accordion 2'} collapsed={true}/>*/}
-            <br/>
-            <hr/>
-
-            <Rating value={ratingValue} onClick={setRatingValue}/>
-            <br/>
-            <hr/>
-
-            <UncontrollRating/>
-            <br/>
-            <UncontrollRating/>
-
-
-            <br/>
-            <hr/>
-            <UncontrollOnOff/>
-            <UncontrollOnOff/>
-
-            <br/>
-            <hr/>
-
-            <OnOff on={on} setOn={(on) => setOn(on)}/>
+            <h1>{value}</h1>
+            <button onClick={onclickIncHandler}>inc</button>
+            <button onClick={setLocalStorageHandler}>setLocalStorage</button>
+            <button onClick={getLocalStorageHandler}>getLocalStorage</button>
         </div>
     );
 }
 
-type AppTitlePropsType = {
-    title: string
-}
-
-function AppTitle(props: AppTitlePropsType) {
-    return <>{props.title}</>
-}
 
 export default App;

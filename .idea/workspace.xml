@@ -4,11 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0aeb963f-3c1e-4b40-922e-f351ae791e4a" name="Changes" comment="add callbacks">
+    <list default="true" id="0aeb963f-3c1e-4b40-922e-f351ae791e4a" name="Changes" comment="change callbacks">
+      <change afterPath="$PROJECT_DIR$/src/777.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/OnOff/OnOff.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/OnOff/OnOff.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/acccordion/Accordion.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/acccordion/Accordion.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/OnOff/OnOff.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UncontrollOnOff/UncontrollOnOff.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UncontrollRating/UncontrollRating.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/acccordion/Accordion.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/rating/Rating.tsx" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,10 +28,16 @@
         <option value="com.haulmont.rcb.index" />
         <option value="com.haulmont.rcb.useInitial" />
         <option value="com.haulmont.rcb.arrow_function_component" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -43,7 +53,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/home/aleksey/work/app",
+    "last_opened_file_path": "/home/aleksey/Public/incubator/my-app",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
     "node.js.detected.package.tslint": "true",
@@ -69,7 +79,10 @@
       <recent name="$PROJECT_DIR$/src/Rating/Rating.tsx" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.build">
+  <component name="RunManager" selected="Node.js.777.js">
+    <configuration name="777.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/src/777.js" working-dir="$PROJECT_DIR$/src">
+      <method v="2" />
+    </configuration>
     <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -92,6 +105,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Node.js.777.js" />
         <item itemvalue="npm.build" />
         <item itemvalue="npm.start" />
       </list>
@@ -113,7 +127,9 @@
       <workItem from="1671813248149" duration="3113000" />
       <workItem from="1671986840983" duration="380000" />
       <workItem from="1673374880402" duration="2196000" />
-      <workItem from="1674546322357" duration="6903000" />
+      <workItem from="1674546322357" duration="6938000" />
+      <workItem from="1674557292228" duration="14000" />
+      <workItem from="1675328892293" duration="3456000" />
     </task>
     <task id="LOCAL-00001" summary="add callbacks">
       <created>1674550992761</created>
@@ -122,7 +138,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674550992761</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="change callbacks">
+      <created>1674557139350</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1674557139350</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -141,6 +164,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add callbacks" />
-    <option name="LAST_COMMIT_MESSAGE" value="add callbacks" />
+    <MESSAGE value="change callbacks" />
+    <option name="LAST_COMMIT_MESSAGE" value="change callbacks" />
   </component>
 </project>
