@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import './App.css';
-import {NavLink, Route, Routes} from "react-router-dom";
+import {NavLink, Outlet, Route, Routes} from "react-router-dom";
 
 
 function App() {
@@ -16,8 +16,19 @@ function App() {
                 <Route path={'/*'} element={<div>404</div>}/>
                 <Route path={'/'} element={<div>main</div>}/>
                 <Route path={'/login'} element={<div>login</div>}/>
-                <Route path={'/profile'} element={<div>profile</div>}/>
-                <Route path={'/profile/settings'} element={<div>settings</div>}/>
+                <Route path={'/profile'} element={(
+                    <div>
+                        profile
+                        <Outlet/>
+                    </div>
+                )}>
+
+                    <Route path={'*'} element={<div>profile page not found</div>}/>
+                    <Route path={':id'} element={<div>id</div>}/>
+                    <Route path={'settings'} element={<div>settings</div>}/>
+
+                </Route>
+
             </Routes>
         </div>
     )

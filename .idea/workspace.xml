@@ -4,17 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0aeb963f-3c1e-4b40-922e-f351ae791e4a" name="Changes" comment="add callbacks">
+    <list default="true" id="0aeb963f-3c1e-4b40-922e-f351ae791e4a" name="Changes" comment="add router">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/OnOff/OnOff.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UncontrollOnOff/UncontrollOnOff.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UncontrollRating/UncontrollRating.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/acccordion/Accordion.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/rating/Rating.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,7 +120,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674550992761</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add router">
+      <created>1675342240594</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1675342240594</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -147,6 +146,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add callbacks" />
-    <option name="LAST_COMMIT_MESSAGE" value="add callbacks" />
+    <MESSAGE value="add router" />
+    <option name="LAST_COMMIT_MESSAGE" value="add router" />
   </component>
 </project>
