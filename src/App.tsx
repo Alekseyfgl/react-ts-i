@@ -1,53 +1,27 @@
 import React, {useState} from 'react';
 import './App.css';
-import {Accordion} from './components/acccordion/Accordion';
-import {Rating} from './components/rating/Rating';
-import {UncontrollOnOff} from './components/UncontrollOnOff/UncontrollOnOff';
-import {UncontrollRating} from './components/UncontrollRating/UncontrollRating';
-import {OnOff} from "./components/OnOff/OnOff";
+import {NavLink, Route, Routes} from "react-router-dom";
+
 
 function App() {
 
-    const [ratingValue, setRatingValue] = useState<number>(0);
-    const [accordionCollapsed, setAccordionCollapsed] = useState<boolean>(false);
-    const [on, setOn] = useState(false);
     return (
         <div>
+            <NavLink to={'/'}>main</NavLink>
+            <NavLink to={'/login'}>login</NavLink>
+            <NavLink to={'/profile'}>profile</NavLink>
+            <NavLink to={'/profile/settings'}>settings</NavLink>
 
-            <Accordion title={'Accordion 1'} collapsed={accordionCollapsed}
-                       setAccordionCollapsed={() => setAccordionCollapsed(!accordionCollapsed)}/>
-            {/*<Accordion title={'Accordion 2'} collapsed={true}/>*/}
-            <br/>
-            <hr/>
-
-            <Rating value={ratingValue} onClick={setRatingValue}/>
-            <br/>
-            <hr/>
-
-            <UncontrollRating/>
-            <br/>
-            <UncontrollRating/>
-
-
-            <br/>
-            <hr/>
-            <UncontrollOnOff/>
-            <UncontrollOnOff/>
-
-            <br/>
-            <hr/>
-
-            <OnOff on={on} setOn={(on) => setOn(on)}/>
+            <Routes>
+                <Route path={'/*'} element={<div>404</div>}/>
+                <Route path={'/'} element={<div>main</div>}/>
+                <Route path={'/login'} element={<div>login</div>}/>
+                <Route path={'/profile'} element={<div>profile</div>}/>
+                <Route path={'/profile/settings'} element={<div>settings</div>}/>
+            </Routes>
         </div>
-    );
+    )
 }
 
-type AppTitlePropsType = {
-    title: string
-}
-
-function AppTitle(props: AppTitlePropsType) {
-    return <>{props.title}</>
-}
 
 export default App;
