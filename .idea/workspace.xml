@@ -4,9 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0aeb963f-3c1e-4b40-922e-f351ae791e4a" name="Changes" comment="add router">
+    <list default="true" id="0aeb963f-3c1e-4b40-922e-f351ae791e4a" name="Changes" comment="add state for rating">
+      <change afterPath="$PROJECT_DIR$/src/dev/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dev/palette.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dev/previews.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dev/useInitial.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,15 +24,20 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="com.haulmont.rcb.function_component" />
+        <option value="com.haulmont.rcb.arrow_function_component" />
         <option value="com.haulmont.rcb.palette" />
         <option value="com.haulmont.rcb.previews" />
         <option value="com.haulmont.rcb.index" />
         <option value="com.haulmont.rcb.useInitial" />
-        <option value="com.haulmont.rcb.arrow_function_component" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -50,7 +62,7 @@
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/home/aleksey/Public/incubator/my-app/node_modules/typescript/lib&quot;
+    &quot;ts.external.directory.path&quot;: &quot;D:\\webstorm\\incubator\\react-ts-i\\node_modules\\typescript\\lib&quot;
   }
 }</component>
   <component name="ReactDesignerToolWindowState">
@@ -112,6 +124,7 @@
       <workItem from="1671986840983" duration="380000" />
       <workItem from="1673374880402" duration="2196000" />
       <workItem from="1674546322357" duration="6903000" />
+      <workItem from="1675438172802" duration="3917000" />
     </task>
     <task id="LOCAL-00001" summary="add callbacks">
       <created>1674550992761</created>
