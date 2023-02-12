@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {FC} from 'react';
 
 export type AccordionPropsType = {
     title: string
@@ -10,14 +10,18 @@ export type AccordionPropsType = {
      * This callBack something do
      */
     setAccordionCollapsed: () => void
+    items: IItemType[]
+    onClick: (value: any) => void
 }
 
 export function Accordion(props: AccordionPropsType) {
 
     return (
         <div>
-            <AccordionTitle titleValue={props.title} onClick={props.setAccordionCollapsed} collapsed={props.collapsed}/>
-            {!props.collapsed && <AccordionBody/>}
+            <AccordionTitle titleValue={props.title}
+                            onClick={props.setAccordionCollapsed}
+                            collapsed={props.collapsed}/>
+            {!props.collapsed && <AccordionBody items={props.items} onClick={props.onClick}/>}
         </div>
 
     )
@@ -30,16 +34,26 @@ type AccordionTitlePropsType = {
 }
 
 function AccordionTitle(props: AccordionTitlePropsType) {
-    return <h3 onClick={(e) =>props.onClick()}>---{props.titleValue} !!!---</h3>
+    return <h3 onClick={(e) => props.onClick()}>---{props.titleValue} !!!---</h3>
 }
 
-function AccordionBody() {
+
+interface IItemType {
+    title: string
+    value: any
+}
+
+
+interface IAccordionBodyProps {
+    items: IItemType[]
+    onClick: (value: any) => void
+}
+
+const AccordionBody: FC<IAccordionBodyProps> = (props) => {
+
     return (
         <ul>
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
+            {props.items.map((item, i) => (<li key={i} onClick={() => props.onClick(item.value)}>{item.title}</li>))}
         </ul>
     )
-
 }

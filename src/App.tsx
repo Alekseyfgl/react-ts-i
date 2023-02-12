@@ -4,18 +4,22 @@ import {Accordion} from './components/acccordion/Accordion';
 import {Rating} from './components/rating/Rating';
 import {UncontrollOnOff} from './components/UncontrollOnOff/UncontrollOnOff';
 import {UncontrollRating} from './components/UncontrollRating/UncontrollRating';
-import {OnOff} from "./components/OnOff/OnOff";
+import {OnOff} from './components/OnOff/OnOff';
 
 function App() {
 
     const [ratingValue, setRatingValue] = useState<number>(0);
-    const [accordionCollapsed, setAccordionCollapsed] = useState<boolean>(false);
+    const [accordionCollapsed, setAccordionCollapsed] = useState<boolean>(true);
     const [on, setOn] = useState(false);
     return (
         <div>
 
-            <Accordion title={'Accordion 1'} collapsed={accordionCollapsed}
-                       setAccordionCollapsed={() => setAccordionCollapsed(!accordionCollapsed)}/>
+            <Accordion title={'Accordion 1'}
+                       items={[{title: 'HTML', value: 123}, {title: 'CSS', value: 123}, {title: 'JS', value: 123}]}
+                       collapsed={accordionCollapsed}
+                       setAccordionCollapsed={() => setAccordionCollapsed(!accordionCollapsed)}
+                       onClick={() => {
+                       }}/>
             {/*<Accordion title={'Accordion 2'} collapsed={true}/>*/}
             <br/>
             <hr/>
@@ -24,9 +28,11 @@ function App() {
             <br/>
             <hr/>
 
-            <UncontrollRating onChange={()=> {}} />
+            <UncontrollRating onChange={() => {
+            }}/>
             <br/>
-            <UncontrollRating  onChange={()=> {}}/>
+            <UncontrollRating onChange={() => {
+            }}/>
 
 
             <br/>
