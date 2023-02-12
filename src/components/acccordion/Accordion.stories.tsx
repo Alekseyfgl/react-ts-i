@@ -1,10 +1,9 @@
 import React, {useState} from 'react';
-import {Accordion} from "./Accordion";
-import {ComponentStory, ComponentMeta} from '@storybook/react';
-import * as buffer from "buffer";
-import {Rating} from "../rating/Rating";
-import {action} from "@storybook/addon-actions";
-import {validateHeaderName} from "http";
+import {Accordion, AccordionPropsType} from './Accordion';
+import {ComponentStory, ComponentMeta, Story} from '@storybook/react';
+
+import {action} from '@storybook/addon-actions';
+
 
 
 export default {
@@ -14,15 +13,36 @@ export default {
 
 const callBack = action('accordion mode change event fired')
 
-export const AccordionCollapsed = () => <Accordion title={'Menu'} collapsed={true} setAccordionCollapsed={callBack}/>
-export const AccordionUnCollapsed = () => <Accordion title={'Users'} collapsed={false}
-                                                     setAccordionCollapsed={callBack}/>
-
-export const AccordionChanging = () => {
-    const [state, setState] = useState<boolean>(true);
-    return <Accordion title={'Menu'} collapsed={state} setAccordionCollapsed={() => setState(!state)}/>
+const Template: Story<AccordionPropsType> = (args) => <Accordion {...args}/>
+const callbackProps = {
+    setAccordionCollapsed: callBack,
 }
 
+export const AccordionCollapsed = Template.bind({});
+AccordionCollapsed.args = {
+    ...callbackProps,
+    title: 'Menu',
+    collapsed: true,
+
+}
+
+
+export const AccordionUnCollapsed = Template.bind({});
+AccordionUnCollapsed.args = {
+    ...callbackProps,
+    title: 'Users',
+    collapsed: false,
+}
+
+export const AccordionChanging: Story<AccordionPropsType> = (args) => {
+    const [state, setState] = useState<boolean>(true);
+    return <Accordion {...args} setAccordionCollapsed={() => setState(!state)}/>
+}
+AccordionChanging.args = {
+    title: 'Menu test',
+    collapsed: true,
+
+}
 
 
 

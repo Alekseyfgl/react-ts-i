@@ -24,9 +24,9 @@ function App() {
             <br/>
             <hr/>
 
-            <UncontrollRating/>
+            <UncontrollRating onChange={()=> {}} />
             <br/>
-            <UncontrollRating/>
+            <UncontrollRating  onChange={()=> {}}/>
 
 
             <br/>

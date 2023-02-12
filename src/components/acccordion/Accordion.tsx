@@ -1,8 +1,14 @@
 import React from 'react';
 
-type AccordionPropsType = {
+export type AccordionPropsType = {
     title: string
+    /**
+     * This element can collapse element and expand [Link text Here](./src)
+     */
     collapsed: boolean
+    /**
+     * This callBack something do
+     */
     setAccordionCollapsed: () => void
 }
 

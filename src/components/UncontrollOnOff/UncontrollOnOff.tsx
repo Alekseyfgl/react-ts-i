@@ -1,11 +1,13 @@
-import {useState} from 'react';
+import {FC, useState} from 'react';
 
+interface IUncontrollOnOffProps {
+    defaultOn?: boolean
+}
 
-export const UncontrollOnOff = () => {
+export const UncontrollOnOff: FC<IUncontrollOnOffProps> = (props) => {
 
-    const [onOff, setOnOff] = useState<boolean>(true);
+    const [onOff, setOnOff] = useState<boolean>(props.defaultOn ?? true);
 
-    console.log(onOff)
     const onClickOnfHandler = () => {
         setOnOff(true)
     }
