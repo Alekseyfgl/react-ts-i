@@ -44,7 +44,7 @@ function App() {
             <br/>
             <hr/>
 
-            <OnOff on={on} setOn={(on) => setOn(on)}/>
+            <OnOff on={on} onChange={(on) => setOn(on)}/>
 
             {/*<Select collapse={false} items={[{title: 'HTML', value:1}, {title: 'CSS', value:2}, ]}/>*/}
         </div>

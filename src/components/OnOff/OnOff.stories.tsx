@@ -13,11 +13,11 @@ export default {
 
 const callBack = action('on or off clicked')
 
-export const OnMode = () => <OnOff on={true} setOn={callBack}/>
-export const OffMode = () => <OnOff on={false} setOn={callBack}/>
+export const OnMode = () => <OnOff on={true} onChange={callBack}/>
+export const OffMode = () => <OnOff on={false} onChange={callBack}/>
 export const ModeChanging = () => {
     const [state, setState] = useState(true);
-    return <OnOff on={state} setOn={setState}/>
+    return <OnOff on={state} onChange={setState}/>
 }
 
 
