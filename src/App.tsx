@@ -5,6 +5,7 @@ import {Rating} from './components/rating/Rating';
 import {UncontrollOnOff} from './components/UncontrollOnOff/UncontrollOnOff';
 import {UncontrollRating} from './components/UncontrollRating/UncontrollRating';
 import {OnOff} from './components/OnOff/OnOff';
+import {Select} from "./components/Select/Select";
 
 function App() {
 
@@ -44,6 +45,8 @@ function App() {
             <hr/>
 
             <OnOff on={on} setOn={(on) => setOn(on)}/>
+
+            {/*<Select collapse={false} items={[{title: 'HTML', value:1}, {title: 'CSS', value:2}, ]}/>*/}
         </div>
     );
 }

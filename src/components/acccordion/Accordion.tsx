@@ -38,7 +38,7 @@ function AccordionTitle(props: AccordionTitlePropsType) {
 }
 
 
-interface IItemType {
+export interface IItemType {
     title: string
     value: any
 }
