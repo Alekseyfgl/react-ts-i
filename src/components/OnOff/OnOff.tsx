@@ -2,16 +2,16 @@ import {FC, useState} from "react";
 
 type OnOffPopsType = {
     on: boolean
-    setOn: (on: boolean) => void
+    onChange: (on: boolean) => void
 }
 export const OnOff: FC<OnOffPopsType> = (props) => {
 
 
     const onClickOnfHandler = () => {
-        props.setOn(true)
+        props.onChange(true)
     }
     const onClickOffHandler = () => {
-        props.setOn(false)
+        props.onChange(false)
     }
     const indicatorStyle = {
         borderRadius: '50%',
