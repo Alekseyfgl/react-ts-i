@@ -1,4 +1,4 @@
-import React, {ChangeEvent, useMemo, useState} from "react";
+import React, {ChangeEvent, useCallback, useMemo, useState} from 'react';
 
 export default {
     title: 'useMemo'
@@ -8,10 +8,8 @@ export const DifficultCountingExample = () => {
     console.log('===>DifficultCountingExample')
     const [a, setA] = useState<number>(0);
     const [b, setB] = useState<number>(0);
-
-    let resultA = 1
+    let resultA
     let resultB = 1
-
     resultA = useMemo<number>(() => { // функция запускается когда меняется а
         //а так она запоминает значение (мемоизирует)
         // помогает избежать черезмерной нагрузки на устройство
@@ -46,8 +44,14 @@ export const DifficultCountingExample = () => {
         </>
     )
 }
-
-
+const UsersSecret = (props: { users: Array<string> }) => {
+    console.log('UsersSecret')
+    return <div>{props.users.map((u: any, i: number) => {
+        return <div key={i}>{u}</div>
+    })}</div>
+}
+//by default use shallow compare, but there is (a,b) => check props
+const Users = React.memo(UsersSecret)
 
 export const HelpsToReactMemo = () => {
     console.log('===>HelpsToReactMemo')
@@ -55,11 +59,11 @@ export const HelpsToReactMemo = () => {
     const [users, setUsers] = useState(['Dimich', 'Valera', 'Lexa']);
 
     const newArray = useMemo(() => {
-       return  users.filter(u => u.toLowerCase().indexOf('a') > -1)
+        return users.filter(u => u.toLowerCase().indexOf('a') > -1)
     }, [users]);
 
     const addUser = () => {
-        setUsers([...users,'Steva' + new Date().getTime() ])
+        setUsers([...users, 'Steva' + new Date().getTime()])
     }
 
     return <div>
@@ -70,12 +74,37 @@ export const HelpsToReactMemo = () => {
     </div>
 }
 
-const UsersSecret = (props: { users: Array<string> }) => {
-    console.log('UsersSecret')
-    return <div>{props.users.map((u: any, i: number) => {
-        return <div key={i}>{u}</div>
-    })}</div>
+
+//=========================================
+export const LikeUseCallBack = () => {
+    console.log('===>LikeUseCallBack')
+    const [counter, setCounter] = useState(0);
+    const [books, setBooks] = useState(['Dimich', 'Valera', 'Lexa']);
+
+    const addBook = () => {
+        console.log('books', books)
+        setBooks([...books, 'Steva' + new Date().getTime()])
+    }
+
+    const memoizedAddBook1 = useMemo(() => addBook, [books]); // the s ame
+    const memoizedAddBook2 = useCallback(addBook, [books],);
+
+
+    return <div>
+        <button onClick={() => setCounter(counter + 1)}>+</button>
+        {counter}
+        <Books addBook={memoizedAddBook2}/>
+    </div>
 }
 
+type BookSecretPropsType = { addBook: () => void }
+
+const BooksSecret = (props: BookSecretPropsType) => {
+    console.log('BooksSecret')
+    return (
+        <div>
+            <button onClick={() => props.addBook()}>add user</button>
+        </div>)
+}
 //by default use shallow compare, but there is (a,b) => check props
-const Users = React.memo(UsersSecret)
+const Books = React.memo(BooksSecret)
